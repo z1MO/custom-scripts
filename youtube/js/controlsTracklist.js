@@ -23,7 +23,7 @@ class ControlsTracklist {
 			this.consolelog('Uploaded tracklist: ' + this.podcastTitle);
 			this.consolelog(this.tracklist);
 		} else {
-			this.getInfoPodcast('https://vlkh.pp.ua/customFeatures/youtube/php/parse1001Tracklist.php', {titlePosdcast: this.podcastTitle})
+			this.getInfoPodcast(`https://vlkh.pp.ua/custom-scripts/${nameSite}/php/parse1001Tracklist.php`, {titlePosdcast: this.podcastTitle})
 				.then(response => {
 					if(response.ok) {
 						return response.json();

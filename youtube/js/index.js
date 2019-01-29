@@ -108,6 +108,7 @@ const modules = [
 	'controlsTracklist.js?v=2.6',
 	'other.js',
 ];
+const nameSite = window.location.hostname.match(/(www\.)?(\w+)\..+/)[2];
 
 function dynamicallyLoadScript(module) {
 	let tagModule = document.createElement('script');
@@ -120,7 +121,7 @@ function dynamicallyLoadScript(module) {
 			tagModule.setAttribute(key, module[key]);
 		}
 	} else {
-		tagModule.src = `//vlkh.pp.ua/customFeatures/youtube/js/${module}`;
+		tagModule.src = `//vlkh.pp.ua/custom-scripts/${nameSite}/js/${module}`;
 	}
 
 	document.head.appendChild(tagModule);
@@ -149,7 +150,7 @@ const style = document.createElement('link');
 const timeStamp = +new Date();
 
 style.charset = 'utf-8';
-style.href = '//vlkh.pp.ua/customFeatures/youtube/css/index.css?v=' + timeStamp;
+style.href = `//vlkh.pp.ua/custom-scripts/${nameSite}/css/index.css?v=${timeStamp}`;
 style.rel = 'stylesheet';
 
 document.head.appendChild(style);
