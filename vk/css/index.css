@@ -1,0 +1,210 @@
+/*
+** Увеличение кнопки "скрыть комментарии"
+*/
+.replies_side {
+	width: 54px;
+	height: 54px;
+	background-size: 30%;
+}
+.replies_side.replies_side_fixed {
+	margin-left: -10px;
+}
+
+
+/*
+** Стили для кнопки "переголосовать" в опросах
+*/
+.page_poll_repoll {
+	color: #939393;
+	padding-left: 8px;
+}
+.page_poll_repoll + .divider {
+	float: right;
+}
+.page_poll_repoll + .divider:before {
+	position: static;
+	margin: 2px 0 0 -2px;
+	padding: 0;
+	line-height: inherit;
+	font-size: 14px;
+}
+
+
+/*
+** Фикс стилей в плеере
+*/
+.audio_row_cover_play_icon {
+	left: 1px;
+}
+.audio_row_playing .audio_row_cover_play_icon {
+	left: 0;
+}
+.audio_w_covers .audio_row .audio_row__cover,
+.audio_w_covers .audio_row .audio_row__cover_back {
+	transition: all 0.2s ease;
+	border-radius: 50%;
+}
+
+
+/*
+** Более четкое выделение искомых слов
+*/
+#page_search_posts .highlight {
+	background: #d9dfe4;
+}
+
+
+/*
+** Слишком много думаю, поэтому не знаю как это назвать, но по классам всё понятно
+*/
+.zoom_text_active .wall_text #wpe_text.zoom_text {
+	font-weight: inherit !important;
+	font-size: inherit !important;
+	line-height: 1.462 !important;
+}
+
+
+/*
+** Скрытие кнопку "перемешать всё" в плеере
+*/
+.audio_page__shuffle_all {
+	display: none;
+}
+
+
+/*
+** Скрытие ссылка на аудиозапись в плеере верхней навигации
+*/
+.top_audio_player_title .savefrom_vk_download {
+	display: none;
+}
+.top_audio_player .top_audio_player_copy-name {
+	display: none;
+	float: right;
+	margin-left: 7px;
+}
+.top_audio_player_copy-name .top_audio_player_btn_icon {
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDk3NC45IDk3NC45IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA5NzQuOSA5NzQuOTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxwYXRoIGQ9Ik05NzQuNTcyLDI5Mi4zYzAtMTYuNi0xMy4zOTktMzAtMzAtMzBoLTIwNi4zYy0xNi42LDAtMzAtMTMuNC0zMC0zMFYzMGMwLTE2LjYtMTMuNC0zMC0zMC0zMGgtMjE1LjIgICBjLTI0Ljg5OSwwLTQ1LDIwLjEtNDUsNDV2MTU2LjhjMC40LDAuNCwwLjksMC44LDEuMywxLjNsMTc1LjEwMSwxNzUuMWMxNC4zLDE0LjMsMjEuODk5LDMzLjMsMjEuOCw1Mi43aDAuMXYzMDMuMmgzMTMuMTAxICAgYzI0Ljg5OSwwLDQ1LTIwLjEwMSw0NS00NVYyOTIuM0g5NzQuNTcyeiIgZmlsbD0iI0ZGRkZGRiIvPgoJPHBhdGggZD0iTTc5NS4wNzIsNC41Yy05LjM5OS05LjQtMjUuNi0yLjgtMjUuNiwxMC42djE3NS4xYzAsOC4zLDYuNywxNSwxNSwxNWgxNzUuMWMxMy40LDAsMjAuMTAxLTE2LjIsMTAuNjAxLTI1LjZMNzk1LjA3Miw0LjV6IiBmaWxsPSIjRkZGRkZGIi8+Cgk8cGF0aCBkPSJNNDUuMjcyLDk3NC45TDQ1LjI3Miw5NzQuOWg0NjYuNWwwLDBjMjQuOSwwLDQ1LTIwLjEwMSw0NS00NXYtMTk1Ljh2LTE5N2MwLTE2LjYwMS0xMy40LTMwLTMwLTMwaC0xMDguN2gtOTYuNSAgIGMtMTYuNiwwLTMwLTEzLjQtMzAtMzBWNDMxVjI3MC44YzAtMTYuNi0xMy40LTMwLTMwLTMwaC0yMTYuM2MtMjQuOSwwLTQ1LDIwLjEtNDUsMzZ2NjQ0LjFjMCw5LDEuNCwxNyw0LDI0ICAgQzExLjM3Myw5NjQsMjcuMDcyLDk3NC45LDQ1LjI3Miw5NzQuOXoiIGZpbGw9IiNGRkZGRkYiLz4KCTxwYXRoIGQ9Ik0zNjYuNjczLDQ0NS45aDUxLjNoMTIzLjhjOSwwLDE0LjktNy4zLDE1LTE1YzAtMy43LTEuMy03LjUtNC40LTEwLjYwMUw0MTguMDcyLDI4NS45bC00MC43LTQwLjcgICBjLTMuMS0zLjEtNi44LTQuNC0xMC41LTQuNGMtNy42OTksMC0xNS4xLDYtMTUuMSwxNXYxNzUuMWwwLDBDMzUxLjY3Myw0MzkuMiwzNTguNDczLDQ0NS45LDM2Ni42NzMsNDQ1Ljl6IiBmaWxsPSIjRkZGRkZGIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
+}
+.top_audio_player_enabled:hover .top_audio_player_copy-name {
+	display: block;
+}
+
+.audio_inline_player .slider {
+	padding-bottom: 10px;
+}
+
+
+/*
+** Большие аватарки в поиске
+*/
+.search_row .ui_zoom_inner,
+.search_row .img,
+.search_item_img_link,
+.search_item_img {
+	width: 100px;
+	height: 100px;
+}
+
+
+/*
+** Counts module
+*/
+.counts_module {
+	display: flex;
+	justify-content: space-around;
+}
+.page_counter {
+	padding: 15px 0 !important;
+}
+.page_counter[href^="/gifts"],
+.page_counter[href^="/tag"] {
+	display: none;
+}
+
+
+/*
+** Отображение дополнительных настроек аудиозаписи по-умолчанию
+*/
+#audio_extra_edit {
+	display: block !important;
+}
+#audio_extra_link {
+	display: none !important;
+}
+
+
+/*
+** Быстрый поиск человека только по авкам
+*/
+.fast-search #results {
+	padding: 15px 13px 0;
+}
+.fast-search .controls,
+.fast-search .info {
+	display: none;
+}
+.fast-search .search_row {
+	display: inline-block;
+	padding: 5px 0;
+	border: none;
+}
+.fast-search .search_row .img {
+	margin-right: 6px;
+}
+.fast-search .search_row:nth-child(5n+5) .img {
+	margin-right: 0;
+}
+
+
+/*
+** Шоб ПКМ на картинках карусели в лонгридах срабатывал
+*/
+.article_view > figure[data-type="101"] .article_photo_carousel__images_wrap > div {
+	z-index: 9999;
+}
+.article_view > figure[data-type="101"] .article_photo_carousel__controls .article_photo_carousel__counter,
+.article_view > figure[data-type="101"] .article_photo_carousel__controls .article_photo_carousel__left,
+.article_view > figure[data-type="101"] .article_photo_carousel__controls .article_photo_carousel__right {
+	z-index: 10000;
+}
+
+
+/*
+** Отображение кнопки "отписаться" на странице групп без попапа
+*/
+/*.ui_actions_menu_wrap .ui_actions_menu {
+	visibility: visible;
+	opacity: 1;
+	right: 0;
+	filter: none;
+	max-width: 200px;
+	padding: 0;
+	min-width: 160px;
+	text-align: center;
+	display: block!important;
+	top: 13px !important;
+	pointer-events: auto;
+}
+.ui_actions_menu_wrap .ui_actions_menu .ui_actions_menu_item {
+	padding: 5px 0;
+	background: none;
+	border: none;
+	 display: block;
+	font-size: 13px;
+	width: 100%;
+	height: 40px;
+	line-height: 18px;
+	cursor: pointer;
+}
+.ui_actions_menu_wrap .ui_actions_menu .ui_actions_menu_item:focus {
+	background: #00000010;
+}
+.ui_actions_menu_wrap .ui_actions_menu:before,
+.ui_actions_menu_wrap .ui_actions_menu:after {
+	content: none;
+}
+.ui_actions_menu_wrap .ui_actions_menu .ui_actions_menu_sep,
+.ui_actions_menu_wrap .ui_actions_menu .ui_actions_menu_sep ~ .ui_actions_menu_item {
+	display: none;
+}*/

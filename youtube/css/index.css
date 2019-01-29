@@ -1,0 +1,120 @@
+/* Прокрутка часового подкаста, аля имитация плейлиста */
+.comment-playlist {
+	color: #555;
+	opacity: 0.75;
+	cursor: pointer;
+}
+.comment-playlist:hover {
+	opacity: 1;
+}
+.comment-playlist--active {
+	color: #128ee9;
+	opacity: 1;
+}
+.spf-link--active {
+	font-size: 1.3em;
+	text-decoration: underline;
+}
+.ytp-rewindnext-button {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+/* Автодобавление музыки в плейлист "Посмотреть позже" */
+.last-video {
+	width: 250px;
+	padding: 15px;
+}
+.last-video p {
+	margin: 1em 0;
+}
+.last-video input {
+	width: 100%;
+}
+.last-video::backdrop {
+	background: rgba(0, 0, 0, 0.7);
+}
+ .ytd-grid-video-renderer--checked {
+	opacity: 0.5;
+}
+.ytd-grid-video-renderer--add-list {
+	opacity: 1;
+}
+
+/* Удаление обводки у комментариев при фокусе */
+#content-text.ytd-comment-renderer {
+	outline: none;
+}
+
+/* Добавление кнопки "поиск в вк" для стрима музыки */
+#search-input.add-new-button {
+	position: relative;
+	padding-right: 20px;
+}
+.icon-vk,
+.controls-tracklist--in-vk {
+	background-image: url('../images/vk.svg');
+}
+.search-in-vk {
+	display: none;
+	position: absolute;
+	top: 5px;
+	right: 3px;
+	width: 16px;
+	height: 16px;
+	opacity: 0.6;
+	cursor: pointer;
+}
+.search-in-vk:hover,
+.search-in-vk:focus {
+	opacity: 0.8;
+}
+.search-in-vk:active {
+	opacity: 1;
+}
+.add-new-button .search-in-vk {
+	display: block;
+}
+
+/* Ссылка для названия видео */
+h1.title a {
+	color: var(--yt-primary-text-color);
+	text-decoration: none;
+}
+h1.title a:hover {
+	text-decoration: underline;
+}
+
+/* Контролы для подкастов */
+.controls-tracklist--prev,
+.controls-tracklist--next {
+	background-image: url('../images/rewind-arrow.svg');
+}
+.controls-tracklist--next {
+	transform: rotate(-180deg);
+}
+.controls-tracklist--prev,
+.controls-tracklist--next,
+.controls-tracklist--in-vk {
+	background-repeat: no-repeat;
+	background-size: 45%;
+	background-position: center;
+}
+.controls-tracklist--in-vk {
+	background-size: 55%;
+}
+
+/* Плавное уменьшение высоты плеера (чтобы показать доп инфу снизу) */
+ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy {
+	max-height: calc(100vh - 225px);
+	transition: height 0.3s ease;
+}
+
+ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy {
+	max-height: 100vh;
+}
+
+/* скрытие пункта "библиотека" в левом меню */
+#header.ytd-guide-collapsible-section-entry-renderer {
+	display: none;
+}
