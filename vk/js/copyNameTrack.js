@@ -77,7 +77,7 @@ function getInfoTrack(title) {
 			objectDate = new Date(textDate);
 		}
 	} else if(groupNick === 'edm_people') {
-		const textDate = postText.match(/(\d{2})\s(\w+)/i);
+		const textDate = postText.match(/(\d{1,2})\s(\w+)/i);
 
 		if(textDate !== null) {
 			objectDate = new Date(`${textDate[1]} ${textDate[2]} ${new Date().getFullYear()}`);

@@ -9,7 +9,7 @@ const modules = [
 	'pageActions.js',
 	'bypassLinksTraps.js',
 	'scrollNextTrack.js?v=1.3',
-	'copyNameTrack.js?v=2.4`',
+	'copyNameTrack.js?v=2.5`',
 	'viewerDocs.js',
 	'skipExtendedTracks.js'
 ];
