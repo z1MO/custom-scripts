@@ -4,7 +4,8 @@
 */
 const modules = [
 	'sortingSearch.js',
-	'scrollToMessage.js?v=1.2'
+	'scrollToMessage.js?v=1.2',
+	'resultsAsTopics.js'
 ];
 const nameSite = window.location.hostname.match(/(www\.)?(\w+)\..+/)[2];
 
