@@ -8,7 +8,7 @@ const modules = [
 	'leftMenu.js?v=1.2',
 	'pageActions.js',
 	'bypassLinksTraps.js',
-	'scrollNextTrack.js?v=1.3',
+	'scrollNextTrack.js?v=1.4',
 	'copyNameTrack.js?v=2.5`',
 	'viewerDocs.js',
 	'skipExtendedTracks.js'
