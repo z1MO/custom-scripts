@@ -19,6 +19,7 @@ function addButtonVKSearch() {
 	buttVKSearch.classList.add('search-in-vk');
 	buttVKSearch.classList.add('icon-vk');
 	buttVKSearch.setAttribute('target', '_blank');
+	buttVKSearch.setAttribute('tabindex', '0');
 	buttVKSearch.addEventListener('click', () => {
 		const valueInputSearch = document.querySelector('input#search').value;
 
