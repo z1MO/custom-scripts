@@ -104,7 +104,7 @@ function scrollToPostAudio(mutationList) {
 		}
 	})();
 
-	window.scrollToY(getOffsetRect(currentAudio).top - window.clientHeight() + currentAudio.offsetHeight * 3);
+	window.scrollToY(getOffsetRect(currentAudio).top - window.clientHeight() + currentAudio.offsetHeight * 4);
 }
 
 function listenerAudioChange() {
