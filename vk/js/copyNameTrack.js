@@ -38,7 +38,7 @@ function copyAudioName() {
 
 			if(confirm('Открыть гугл-календарь?')) {
 				window.open(urlCalendar, '_blank');
-				setLikePost(postIDTrack);
+				Utils.setLikePost(postIDTrack);
 			}
 		}
 	}
@@ -90,17 +90,6 @@ function getInfoTrack(title) {
 	}
 }
 
-/*
-**
-** void func setLikePost
-** param postID: string
-**
-*/
-function setLikePost(postID) {
-	const likeBtn = document.querySelector(`#post${postID} ._like_wall${postID} .like_btn.like:not(.active)`);
-
-	if(likeBtn) likeBtn.click();
-}
 
 Element.prototype.parents = function(selector) {
 	let elem = this;

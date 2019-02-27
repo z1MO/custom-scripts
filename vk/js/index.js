@@ -5,11 +5,12 @@ const globElemsMutation = '#page_body, #wrap3, #wrap2, #page_wall_posts';
 */
 const modules = [
 	'mutationElems.js',
+	'utils.js',
 	'leftMenu.js?v=1.2',
 	'pageActions.js',
 	'bypassLinksTraps.js',
 	'scrollNextTrack.js?v=1.4',
-	'copyNameTrack.js?v=2.5`',
+	'copyNameTrack.js?v=2.6`',
 	'viewerDocs.js',
 	'skipExtendedTracks.js'
 ];
