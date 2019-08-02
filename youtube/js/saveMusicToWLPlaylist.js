@@ -26,13 +26,9 @@ function checkPage() {
 	let saveMusicButt = document.querySelector('.ytd-save-music');
 
 	if(location.pathname.includes('/feed/subscriptions')) {
-		// Если кнопка существует - выходим
-		if(saveMusicButt) return false;
-
-		// Добавление кнопки
-		addSaveMusicButton();
+		if(saveMusicButt === null) addSaveMusicButton();
 	} else {
-		if(saveMusicButt) saveMusicButt.parentElement.remove();
+		if(saveMusicButt !== null) saveMusicButt.parentElement.remove();
 	}
 }
 checkPage();
@@ -45,7 +41,9 @@ checkPage();
 function addSaveMusicButton() {
 	const buttWL = document.querySelector('a[href="/playlist?list=WL"]').parentNode; // WL = Watch later
 	const newButt = buttWL.cloneNode(true);
-	const newButtTitle = 'Добавить музыку в плейлист Посмотреть позже';
+	const newButtTitle = 'Добавить музыку в плейлист "Посмотреть позже"';
+
+	buttWL.parentNode.insertBefore(newButt, buttWL.nextElementSibling);
 
 	newButt.firstElementChild.setAttribute('title', newButtTitle);
 	newButt.firstElementChild.classList.add('ytd-save-music');
@@ -59,8 +57,6 @@ function addSaveMusicButton() {
 
 		if(lastVideoName) addVideosToWL(lastVideoName);
 	});
-
-	return buttWL.parentNode.insertBefore(newButt, buttWL.nextElementSibling);
 }
 
 function addVideosToWL(lastVideoName = false) {

@@ -102,7 +102,7 @@ const modules = [
 	'utils.js',
 	// 'favoriteChannels.js',
 	'changeTitleVideo.js?v=1.5.2',
-	'saveMusicToWLPlaylist.js?v=2.01',
+	'saveMusicToWLPlaylist.js?v=2.02',
 	'removeRedirect.js?v=2',
 	'editFieldSearchForStreamVideo.js?v=1.1',
 	'controlsTracklist.js?v=2.6',
